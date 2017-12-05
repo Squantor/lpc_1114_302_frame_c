@@ -6,7 +6,7 @@ INCLUDES = -Iinc -I"lpc_chip_11cxx/inc/"
 LDSCRIPT = -T"ld/nxp_$(MCU).ld"
 RLIBDIR = -L"lpc_chip_11cxx/bin/release"
 RLIBS = -llpc_chip_11cxx
-DLIBDIR = -L"../lpc_chip_11cxx/bin/debug"
+DLIBDIR = -L"lpc_chip_11cxx/bin/debug"
 DLIBS = -llpc_chip_11cxx
 
 
@@ -72,7 +72,7 @@ DEPS = $(OBJECTS:.o=.d)
 .PHONY: release
 release: dirs
 	# make lpc_chip library if needed
-	$(MAKE) -C ../lpc_chip_11cxx release
+	$(MAKE) -C lpc_chip_11cxx release
 	$(MAKE) all --no-print-directory
 
 # Debug build for gdb debugging

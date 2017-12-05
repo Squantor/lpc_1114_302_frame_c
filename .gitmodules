@@ -1,3 +1,4 @@
 [submodule "lpc_chip_11cxx"]
 	path = lpc_chip_11cxx
+	branch = master
 	url = git@github.com:Squantor/lpc_chip_11cxx.git
