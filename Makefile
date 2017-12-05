@@ -1,7 +1,7 @@
 # Project settings
 BIN_NAME = lpc_1114_302_frame_C
 MCU = lpc1114_302
-SOURCES = src/cr_startup_lpc11xx.c src/sysinit.c src/main.c src/crp.c
+SOURCES = src/cr_startup_lpc11xx.c src/sysinit.c src/main.c src/crp.c src/print.c src/board_init.c
 INCLUDES = -Iinc -I"lpc_chip_11cxx/inc/"
 LDSCRIPT = -T"ld/nxp_$(MCU).ld"
 RLIBDIR = -L"lpc_chip_11cxx/bin/release"
