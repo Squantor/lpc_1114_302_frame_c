@@ -10,6 +10,14 @@ void board_init(void)
 {
 	// need find out how to properly setup the crystal oscillator
     SystemCoreClockUpdate();
+    // release resets
+    Chip_SYSCTL_DeassertPeriphReset(RESET_I2C0);
+    Chip_SYSCTL_DeassertPeriphReset(RESET_SSP0);
+    // inits
+    Chip_GPIO_Init(LPC_GPIO);
+    Chip_UART_Init(LPC_USART);
+    //Chip_I2C_Init(I2C0);
+    Chip_SSP_Init(LPC_SSP0);
     // setup pins
     Chip_GPIO_SetPinDIROutput(LPC_GPIO, LED_PORT, LED_PIN);
 	Chip_IOCON_PinMuxSet(LPC_IOCON, IOCON_PIO1_6, (IOCON_FUNC1 | IOCON_MODE_INACT)); /* UART RXD */
@@ -20,14 +28,6 @@ void board_init(void)
 	Chip_IOCON_PinMuxSet(LPC_IOCON, IOCON_PIO0_9, (IOCON_FUNC1 | IOCON_MODE_INACT)); /* SSP MOSI */
 	Chip_IOCON_PinMuxSet(LPC_IOCON, IOCON_PIO0_8, (IOCON_FUNC1 | IOCON_MODE_INACT)); /* SSP MISO */
 	Chip_IOCON_PinLocSel(LPC_IOCON, IOCON_SCKLOC_PIO0_6);
-    // release resets
-    Chip_SYSCTL_DeassertPeriphReset(RESET_I2C0);
-    Chip_SYSCTL_DeassertPeriphReset(RESET_SSP0);
-    // inits
-    Chip_GPIO_Init(LPC_GPIO);
-    Chip_UART_Init(LPC_USART);
-    //Chip_I2C_Init(I2C0);
-    Chip_SSP_Init(LPC_SSP0);
 	// setup UART
 	Chip_UART_SetBaud(LPC_USART, UART_SPEED);
 	Chip_UART_ConfigData(LPC_USART, (UART_LCR_WLEN8 | UART_LCR_SBS_1BIT));
