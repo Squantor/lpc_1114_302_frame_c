@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="lpc_1114_302_frame_c" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="debug">
+				<Option output="bin/debug/lpc_1114_302_frame_c" prefix_auto="1" extension_auto="1" />
+				<Option object_output="build/debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="release">
+				<Option output="bin/release/lpc_1114_302_frame_c" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="LICENSE" />
+		<Unit filename="Makefile" />
+		<Unit filename="README.md" />
+		<Unit filename="lpc_chip_11cxx/inc/NXP/crp.h" />
+		<Unit filename="lpc_chip_11cxx/inc/adc_11xx.h" />
+		<Unit filename="lpc_chip_11cxx/inc/ccand_11xx.h" />
+		<Unit filename="lpc_chip_11cxx/inc/chip.h" />
+		<Unit filename="lpc_chip_11cxx/inc/clock_11xx.h" />
+		<Unit filename="lpc_chip_11cxx/inc/cmsis.h" />
+		<Unit filename="lpc_chip_11cxx/inc/cmsis_11cxx.h" />
+		<Unit filename="lpc_chip_11cxx/inc/core_cm0.h" />
+		<Unit filename="lpc_chip_11cxx/inc/core_cmFunc.h" />
+		<Unit filename="lpc_chip_11cxx/inc/core_cmInstr.h" />
+		<Unit filename="lpc_chip_11cxx/inc/error.h" />
+		<Unit filename="lpc_chip_11cxx/inc/fmc_11xx.h" />
+		<Unit filename="lpc_chip_11cxx/inc/gpio_11xx_2.h" />
+		<Unit filename="lpc_chip_11cxx/inc/gpiogroup_11xx.h" />
+		<Unit filename="lpc_chip_11cxx/inc/i2c_11xx.h" />
+		<Unit filename="lpc_chip_11cxx/inc/iocon_11xx.h" />
+		<Unit filename="lpc_chip_11cxx/inc/lpc_types.h" />
+		<Unit filename="lpc_chip_11cxx/inc/pinint_11xx.h" />
+		<Unit filename="lpc_chip_11cxx/inc/pmu_11xx.h" />
+		<Unit filename="lpc_chip_11cxx/inc/ring_buffer.h" />
+		<Unit filename="lpc_chip_11cxx/inc/romapi_11xx.h" />
+		<Unit filename="lpc_chip_11cxx/inc/ssp_11xx.h" />
+		<Unit filename="lpc_chip_11cxx/inc/sys_config.h" />
+		<Unit filename="lpc_chip_11cxx/inc/sysctl_11xx.h" />
+		<Unit filename="lpc_chip_11cxx/inc/timer_11xx.h" />
+		<Unit filename="lpc_chip_11cxx/inc/uart_11xx.h" />
+		<Unit filename="lpc_chip_11cxx/inc/wwdt_11xx.h" />
+		<Unit filename="lpc_chip_11cxx/src/adc_1125.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/adc_11xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/chip_11xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/clock_11xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/gpio_11xx_1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/gpio_11xx_2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/gpiogroup_11xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/i2c_11xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/iocon_11xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/pinint_11xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/pmu_11xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/ring_buffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/ssp_11xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/sysctl_11xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/sysinit_11xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/timer_11xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/uart_11xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lpc_chip_11cxx/src/wwdt_11xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cr_startup_lpc11xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/crp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sysinit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger>
+				<remote_debugging target="debug">
+					<options conn_type="2" serial_port="/dev/ttyBmpGdb" serial_baud="115200" additional_cmds="monitor swdp_scan&#x0A;attach 1&#x0A;set mem inaccessible-by-default off&#x0A;load bin/debug/lpc_1114.elf&#x0A;set {int}0x40048000 = 2&#x0A;compare-sections&#x0A;start" extended_remote="1" />
+				</remote_debugging>
+				<remote_debugging target="release">
+					<options conn_type="2" serial_port="/dev/ttyBmpGdb" serial_baud="115200" extended_remote="1" />
+				</remote_debugging>
+			</debugger>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

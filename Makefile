@@ -1,5 +1,5 @@
 # Project settings
-BIN_NAME = lpc1114_frame_C
+BIN_NAME = lpc_1114_302_frame_C
 MCU = lpc1114_302
 SOURCES = src/cr_startup_lpc11xx.c src/sysinit.c src/main.c src/crp.c
 INCLUDES = -Iinc -I"lpc_chip_11cxx/inc/"
